@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Psicologia em Foco</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+
+</head>
+
+<body>
+
+<header>
+<h1>Psicologia em Foco</h1>
+
+<nav>
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#artigos">Artigos</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+
+<section id="inicio">
+
+<h2>Bem-vindo</h2>
+
+<img src="imagens/imagem.png" alt="Psicologia em Foco" class="logo">
+
+<p>
+Este site é dedicado ao estudo da mente, comportamento humano e bem-estar emocional.
+</p>
+
+<button onclick="mensagem()">
+Clique para uma dica de saúde mental
+</button>
+
+<p id="dica"></p>
+
+</section>
+
+
+<section id="sobre">
+
+<h2>Sobre a Psicologia</h2>
+
+<p>
+A psicologia é a ciência que estuda o comportamento humano e os processos mentais.
+Ela busca compreender emoções, pensamentos e atitudes, ajudando as pessoas
+a desenvolverem uma vida mais equilibrada e saudável.
+</p>
+
+</section>
+
+
+<section id="artigos">
+
+<h2>Artigos</h2>
+
+<div class="card">
+<h3>Ansiedade</h3>
+<p>Entenda o que é ansiedade e como lidar com ela no dia a dia.</p>
+</div>
+
+<div class="card">
+<h3>Inteligência Emocional</h3>
+<p>Aprenda a reconhecer e controlar suas emoções.</p>
+</div>
+
+</section>
+
+
+<section id="contato">
+
+<h2>Contato</h2>
+
+<input type="text" placeholder="Seu nome">
+
+<input type="email" placeholder="Seu email">
+
+<textarea placeholder="Sua mensagem"></textarea>
+
+<button>Enviar</button>
+
+</section>
+
+
+<footer>
+<p>© 2026 Psicologia em Foco</p>
+</footer>
+
+
+<!-- BOTÃO DO CHAT -->
+
+<div class="chat-botao" onclick="abrirChat()">💬</div>
+
+
+<!-- CAIXA DO CHAT -->
+
+<div class="chat-box" id="chat">
+
+<div class="chat-header">
+Chat de Apoio Emocional
+<span onclick="fecharChat()">✖</span>
+</div>
+
+<div class="chat-mensagens" id="mensagens">
+
+<p class="bot">
+Olá 😊 estou aqui para te ouvir. Como você está se sentindo hoje?
+</p>
+
+</div>
+
+<p class="aviso">
+Este chat oferece apoio emocional básico e não substitui um psicólogo profissional.
+</p>
+
+<div class="chat-input">
+
+<input type="text" id="entrada" placeholder="Digite sua mensagem...">
+
+<button onclick="enviarMensagem()">Enviar</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
